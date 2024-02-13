@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 :root {
   --bgOrange: #e84949;
@@ -21,8 +22,6 @@ a {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navbar {
@@ -237,7 +236,7 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  background: linear-gradient(45deg, #fff);
   transform: scaleX(0);
   transform-origin: left;
   transition: all 0.4s;
@@ -248,6 +247,8 @@ a {
 }
 #project1 {
   background-image: url(images/projects/project03.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #project2 {
   margin-left: 120px;
@@ -603,4 +604,81 @@ footer {
 .icon-wrapper {
   display: flex;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section-right {
+    display: none;
+  }
+  .nav-items {
+    display: none;
+  }
+  .hero-section-left {
+    width: 100%;
+    align-items: center;
+  }
+  .hero-section-heading {
+    font-size: 28px;
+  }
+  .hero-section-sub-heading {
+    font-size: 32px;
+  }
+  .hero-section-description {
+    display: none;
+  }
+  #project1 {
+  }
+  .project-heading {
+    font-size: 20px;
+  }
+  .project-sub-heading {
+    font-size: 12px;
+  }
+  .page-header {
+    font-size: 36px;
+  }
+  .project-card {
+    height: 300px;
+    width: 100%;
+  }
+  .project-skill-container {
+    width: 40%;
+    gap: 2px;
+  }
+  .project-skill {
+    width: 20px;
+  }
+  .project-number {
+    font-size: 50px;
+  }
+  .project-number-right {
+    top: 0;
+    right: 0;
+  }
+  .project-number-left {
+    top: 0;
+    right: 0;
+  }
+  .btn-group {
+    gap: 0.4rem;
+  }
+  .icon {
+    font-size: 20px;
+  }
+  #project2 {
+    margin-left: 0;
+  }
+  #project4 {
+    margin-left: 0;
+  }
+  .certificates-container {
+    height: auto;
+    padding-bottom: 25px;
+  }
+  .contactus-heading {
+    font-size: 50px;
+  }
+  .contactus-sub-heading {
+    font-size: 20px;
+  }
 }
