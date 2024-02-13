@@ -668,6 +668,9 @@ footer {
   .hero-section-description {
     display: none;
   }
+  .audio {
+    display: flex;
+  }
   #project1 {
   }
   .project-heading {
