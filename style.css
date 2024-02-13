@@ -758,4 +758,7 @@ footer {
     background-color: transparent;
     border: none;
   }
+  ::-webkit-scrollbar {
+    width: 0.2rem;
+  }
 }
