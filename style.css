@@ -263,6 +263,7 @@ a {
   background-image: url(images/projects/project03.png);
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: url("https://instagram.com/favicon.ico"), auto;
 }
 #project2 {
   margin-left: 120px;
@@ -270,10 +271,12 @@ a {
 }
 #project3 {
   background-image: url(images/projects/Project04.png);
+  cursor: url("https://www.accuweather.com/favicon.ico"), auto;
 }
 #project4 {
   margin-left: 120px;
   background-image: url(images/projects/Project01.png);
+  cursor: url("https://github.com/favicon.ico"), auto;
 }
 .project-number {
   position: absolute;
