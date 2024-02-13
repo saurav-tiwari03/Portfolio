@@ -29,4 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   closeButton.addEventListener("click", function () {
     viewDiv.style.display = "none";
   });
+  setTimeout(function () {
+    viewDiv.style.display = "none";
+  }, 5000);
 });
