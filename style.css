@@ -147,7 +147,8 @@ a {
 .audio {
   display: flex;
   align-items: center;
-  gap: 40px;
+  flex-direction: column;
+  gap: 10px;
   font-size: 20px;
   color: #4e45d5;
   font-weight: 600;
@@ -661,6 +662,7 @@ footer {
   }
   .hero-section-heading {
     font-size: 28px;
+    text-align: center;
   }
   .hero-section-sub-heading {
     font-size: 32px;
