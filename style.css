@@ -6,9 +6,23 @@
   font-family: "Be Vietnam Pro", sans-serif;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  user-select: none;
+}
+.view {
+  display: none;
 }
 :root {
   --bgOrange: #e84949;
+}
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--bgOrange);
+  border-radius: 1rem;
 }
 a {
   text-decoration: none;
@@ -424,6 +438,9 @@ a {
   height: auto;
   padding-bottom: 25px;
 }
+.certificate-subheading {
+  display: none;
+}
 .certi {
   display: flex;
   flex-wrap: wrap;
@@ -612,7 +629,7 @@ footer {
   display: flex;
   gap: 1rem;
 }
-
+/* Media Query for Phone*/
 @media (max-width: 768px) {
   .hero-section-right {
     display: none;
@@ -682,9 +699,16 @@ footer {
     height: auto;
     padding-bottom: 25px;
   }
+  .certificate-subheading {
+    display: block;
+    text-align: center;
+    color: var(--bgOrange);
+  }
+
   .contactus-heading {
     font-size: 50px;
   }
+
   .contactus-sub-heading {
     font-size: 20px;
   }
@@ -692,8 +716,6 @@ footer {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-  }
-  .skill-container-left {
   }
   .skill-container-right {
     grid-template-columns: auto auto auto auto;
@@ -723,5 +745,17 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .view {
+    display: flex;
+    background-color: var(--bgOrange);
+    color: white;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .view-close {
+    background-color: transparent;
+    border: none;
   }
 }
