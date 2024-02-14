@@ -1,4 +1,16 @@
 console.log("Error 404");
+var text = new Typed(".role", {
+  strings: [
+    "Full-Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Coder",
+  ],
+  loop: true,
+  typeSpeed: 100,
+  backSpeed: 80,
+  backDelay: 1000,
+});
 document.addEventListener("DOMContentLoaded", () => {
   if (typeof document.hidden !== "undefined") {
     var hidden = "hidden";
@@ -21,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.addEventListener(visibilityChange, handleVisibilityChange, false);
 });
+//
 document.addEventListener("DOMContentLoaded", function () {
   var viewDiv = document.getElementById("view");
   var closeButton = document.getElementById("view-close");
@@ -32,3 +45,13 @@ document.addEventListener("DOMContentLoaded", function () {
     viewDiv.style.display = "none";
   }, 5000);
 });
+//Scroll Reveal
+ScrollReveal({
+  reset: true,
+  distance: "60px",
+  duration: 1500,
+  delay: 400,
+});
+ScrollReveal().reveal(".logo-container", { delay: 500, origin: "top" });
+ScrollReveal().reveal(".hero-section", { delay: 600, origin: "bottom" });
+ScrollReveal().reveal(".project-card", { delay: 700, origin: "right" });
