@@ -54,4 +54,3 @@ ScrollReveal({
 });
 ScrollReveal().reveal(".logo-container", { delay: 500, origin: "top" });
 ScrollReveal().reveal(".hero-section", { delay: 600, origin: "bottom" });
-ScrollReveal().reveal(".project-card", { delay: 700, origin: "right" });
