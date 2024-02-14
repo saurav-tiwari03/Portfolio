@@ -1,6 +1,5 @@
 console.log("Error 404");
 document.addEventListener("DOMContentLoaded", () => {
-  // Your Page Visibility API code here
   if (typeof document.hidden !== "undefined") {
     var hidden = "hidden";
     var visibilityChange = "visibilitychange";
