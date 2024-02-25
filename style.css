@@ -286,8 +286,9 @@ a {
   background-image: url(images/projects/project02.png);
 }
 #project3 {
-  background-image: url(images/projects/Project04.png);
-  cursor: url("https://www.accuweather.com/favicon.ico"), auto;
+  background-image: url(images/projects/project3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #project4 {
   margin-left: 120px;
