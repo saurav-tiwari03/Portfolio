@@ -54,3 +54,23 @@ ScrollReveal({
 });
 ScrollReveal().reveal(".logo-container", { delay: 500, origin: "top" });
 ScrollReveal().reveal(".hero-section", { delay: 600, origin: "bottom" });
+
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", revealItem);
+
+  function revealItem() {
+    var reveals = document.querySelectorAll('.reveal');
+    var revealPoint = window.innerHeight * 0.75;
+
+    for (var i = 0; i < reveals.length; i++) {
+      var revealTop = reveals[i].getBoundingClientRect().top;
+
+      if (revealTop < revealPoint) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+});
+

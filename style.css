@@ -341,7 +341,6 @@ a {
   mix-blend-mode: color-dodge;
 }
 #python {
-  
 }
 .project-heading {
   font-size: 50px;
@@ -377,6 +376,8 @@ a {
 .project-card:hover .project-content {
   transform: scale(1.1);
 }
+/* Skills Container*/
+
 .skills-container {
   position: relative;
   display: flex;
