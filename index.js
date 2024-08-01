@@ -11,6 +11,7 @@ var text = new Typed(".role", {
   backSpeed: 80,
   backDelay: 1000,
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   if (typeof document.hidden !== "undefined") {
     var hidden = "hidden";
