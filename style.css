@@ -35,8 +35,7 @@ a {
   overflow-x: hidden;
 }
 
-.container {
-}
+
 
 .navbar {
   display: flex;
@@ -276,14 +275,14 @@ a {
   transform: scaleX(1);
 }
 #project1 {
-  background-image: url(images/projects/project03.png);
+  background-image: url(images/projects/Project1.png);
   background-size: cover;
   background-repeat: no-repeat;
   cursor: url("https://instagram.com/favicon.ico"), auto;
 }
 #project2 {
   margin-left: 120px;
-  background-image: url(images/projects/project02.png);
+  background-image: url(images/projects/Project2.png);
 }
 #project3 {
   background-image: url(images/projects/project3.png);
@@ -292,7 +291,7 @@ a {
 }
 #project4 {
   margin-left: 120px;
-  background-image: url(images/projects/Project01.png);
+  background-image: url(images/projects/Project4.png);
   cursor: url("https://github.com/favicon.ico"), auto;
 }
 .project-number {
@@ -341,8 +340,7 @@ a {
   width: 40px;
   mix-blend-mode: color-dodge;
 }
-#python {
-}
+
 .project-heading {
   font-size: 50px;
   font-weight: bold;
@@ -706,8 +704,6 @@ Animation to float tech stack
   }
   .audio {
     display: flex;
-  }
-  #project1 {
   }
   .project-heading {
     font-size: 20px;
